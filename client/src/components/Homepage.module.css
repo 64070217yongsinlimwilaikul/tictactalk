@@ -1,0 +1,25 @@
+:root{
+    --bg-color: #A1EEBD;
+    --hover-color: #C6F3D6;
+    --border-color: #7CBD94;
+    --hover-border-color: #A3B9AB;
+}
+.loginButton {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+    @apply h-14 w-full
+    font-thin py-2 px-4 border-b-4
+    rounded text-2xl focus:outline-none;
+}
+.loginButton:hover{
+    background-color: var(--hover-color);
+    border-color: var(--hover-border-color);
+}
+
+.registerButton{
+    background-color: #F6F7C4;
+    border-color: #C4C59D;
+    @apply h-14 w-full font-thin 
+    py-2 px-4 border-b-4 rounded
+    text-2xl focus:outline-none
+}

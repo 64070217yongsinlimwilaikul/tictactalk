@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Socket.IO Test</title>
+    <script src="/server.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var socket = io();
+
+            socket.on('connect', () => {
+                console.log('Connected to server');
+                socket.send('Hello Server!');
+            });
+
+            socket.on('message', (msg) => {
+                console.log('Message from server:', msg);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Socket.IO Test</h1>
+</body>
+
+</html>

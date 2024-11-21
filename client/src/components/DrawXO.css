@@ -1,0 +1,19 @@
+.draw {
+  stroke-width: 1.5rem;
+  stroke-linecap: round;
+  fill: transparent;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.square.selected {
+  border: 2px solid red;
+  /* or any other visual cue */
+}
